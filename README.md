@@ -1,2 +1,3 @@
 # neo4j-graph-anaysis
-Neo4j cypher queries library
+
+Library of CYPHER queries to load and analyse knowledge graphs in Neo4j Browser.
