@@ -203,6 +203,13 @@ MATCH (n)
 RETURN size([(n)--() | 1]) AS degree, COUNT(n.id) AS frequency
 ORDER BY degree ASC
 ```
+
+**Order nodes by degree**
+```
+MATCH (n:Concepts)
+RETURN size([(n)--() | 1]) AS degree, n.id
+ORDER BY degree ASC
+```
 ### 🔗 Graph operations
 
 **Add MeSH thesaurus hierarchy edges** (with tree numbers)
